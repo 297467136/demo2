@@ -1,0 +1,20 @@
+server:
+  port: 8888
+
+helloWorld: spring Boot\u5927\u7237\u4F60\u597D
+
+#msyql:
+#  jdbcName: com.mysql.jdbc.Driver
+#  dbUrl: jdbc:mysql://localhost:3306/db_diary
+#  userName: root
+#  password: tvm123
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.100.190:3306/db_book?serverTimezone=GMT%2B8&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: tvm123
+  jpa:
+    hibernate.ddl-auto: update
+    show-sql: true
